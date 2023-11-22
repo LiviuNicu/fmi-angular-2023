@@ -1,14 +1,14 @@
 <!--ngIf-->
-<div *ngIf="showAlert" class="alert alert-primary" role="alert">
+<!-- <div *ngIf="showAlert" class="alert alert-primary" role="alert">
   A simple primary alert—check it out!
 </div>
 <div [hidden]="!showAlert" class="alert alert-secondary" role="alert">
   A simple secondary alert—check it out!
-</div>
+</div> -->
 
 <!--ngIf then si else-->
 
-<ng-template *ngIf="showAlert; then showBlock; else notShowBlock"></ng-template>
+<!-- <ng-template *ngIf="showAlert; then showBlock; else notShowBlock"></ng-template>
 <ng-template #showBlock>
   <div class="alert alert-primary" role="alert">
     A simple primary alert—check it out!
@@ -46,9 +46,9 @@
     {{ student.nume }} {{ student.nota }}
     <button [disabled]="student.nota > 5">Exmatriculeaza</button>
   </li>
-</ul>
+</ul> -->
 
-<table class="table">
+<!-- <table>
   <thead>
     <tr>
       <th>Nume</th>
@@ -57,11 +57,11 @@
     </tr>
   </thead>
   <tbody *ngFor="let student of studenti">
-    <app-students-row 
-    [studentData]="student"
-    (doExmatriculare)="exmatriculeaza($event)"
+    <app-students-row
+      [studentData]="student"
+      (doExmatriculare)="exmatriculeaza($event)"
     ></app-students-row>
   </tbody>
-</table>
+</table> -->
 
 <router-outlet></router-outlet>

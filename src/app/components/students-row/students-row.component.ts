@@ -7,7 +7,7 @@ import { Student } from 'src/app/interfaces/student';
   styleUrls: ['./students-row.component.scss']
 })
 export class StudentsRowComponent {
-  @Input() studentData: Student | null = null;
+  @Input() studentData!: Student ;
   @Output() doExmatriculare: EventEmitter<Student>
     = new EventEmitter<Student>();
 
